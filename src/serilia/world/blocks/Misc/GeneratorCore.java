@@ -1,14 +1,11 @@
 package serilia.world.blocks.Misc;
 
 import arc.Core;
-import arc.func.Func;
 import arc.graphics.Color;
 import arc.graphics.g2d.TextureRegion;
 import arc.math.Mathf;
 import arc.util.Strings;
 import arc.util.Time;
-import mindustry.core.UI;
-import mindustry.gen.Building;
 import mindustry.graphics.Drawf;
 import mindustry.graphics.Layer;
 import mindustry.graphics.Pal;
@@ -34,7 +31,7 @@ public class GeneratorCore extends CoreBlock{
     public void load(){
         super.load();
         glow = Core.atlas.find(name + "-glow");
-        uiIcon = fullIcon = editorIcon = Core.atlas.find(name + "-full");
+        uiIcon = fullIcon = Core.atlas.find(name + "-full");
     }
     @Override
     public void setBars(){
